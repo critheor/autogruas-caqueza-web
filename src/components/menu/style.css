@@ -1,0 +1,24 @@
+.app-menu {
+    padding: 5px;
+}
+
+    .app-menu nav {
+        padding: 2px;
+    }
+
+    .app-menu nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .app-menu nav ul li {
+        margin: 4px;
+    }
+
+    .item-menu button{
+        border: none;
+        background-color: inherit;
+        color: white;
+    }

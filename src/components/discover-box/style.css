@@ -1,0 +1,13 @@
+.discover-box ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.discover-box .social-media ul{
+    display: inline-flex;
+}
+
+.discover-box .social-media ul li {
+    margin: 5px;
+}

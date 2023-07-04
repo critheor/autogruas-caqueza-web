@@ -1,0 +1,70 @@
+.app-header{
+    background-color: rgb(20, 80, 201);
+    /*position: fixed;
+    width: 100%;
+    border-bottom: 2px solid white;*/
+}
+
+
+    .app-header nav ul{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 5px 18px 18px 18px;
+        margin: 0;
+    }
+
+    .app-header nav ul li{
+        padding: 2px;
+    }
+
+    .name-company{
+        text-transform: uppercase;
+        margin-left: 5px;
+    }
+
+    .name-company p {
+        margin: 1px;
+        padding: 2px;
+        color: #ff0019;
+        font-size: 10px;
+    }
+
+    .header-button-menu{
+        background-color: rgb(20, 80, 201);
+        border-style: none;
+    }
+
+    .drop-menu-none {
+        display: none;
+    }
+
+    .drop-menu-block {
+        display: block;
+    }
+
+    .li-header {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .baner-pc {
+        margin: 0;
+        position: relative;
+    }
+    
+    .baner-pc img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .baner-pc-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-80%, -50%);
+    }
+
+    

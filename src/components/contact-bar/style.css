@@ -1,0 +1,13 @@
+.contact-bar{
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 16px;
+}
+
+.contact-bar .item-contact-bar{
+    margin-left: 30px;
+    margin-right: 30px;
+}

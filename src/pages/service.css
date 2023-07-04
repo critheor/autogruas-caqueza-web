@@ -1,0 +1,11 @@
+.container section h2 {
+    text-align: center;
+}
+
+@media screen and (min-width: 680px) {
+    .container main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }

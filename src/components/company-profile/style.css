@@ -1,0 +1,17 @@
+.company-profile {
+    background-color: rgb(231, 231, 231);
+    border: 2px solid rgb(20, 80, 201);
+    padding: 20px;
+    color: black;
+    margin-bottom: 18px;
+}
+
+    .company-profile-title {
+        border-bottom: 2px solid black;
+    }
+
+    .company-profile-info p{
+            text-align: justify;
+        }
+
+

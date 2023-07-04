@@ -1,0 +1,36 @@
+.cart-service {
+    background-color: rgb(231, 231, 231);
+    border: 2px solid rgb(20, 80, 201);
+    padding: 20px;
+    margin-bottom: 18px;
+    color: black;
+    max-width: 280px;
+}
+
+.cart-service-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cart-service-title h3 {
+    margin: 0;
+}
+
+.cart-service-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cart-service-contact-us {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (min-width: 680px) {
+    .cart-service {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
