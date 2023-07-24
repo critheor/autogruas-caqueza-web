@@ -1,22 +1,49 @@
+import { Aliados } from '../components/aliados';
+import { ExperienciaComponent } from '../components/experiencia';
+import { Reconocimiento } from '../components/reconocimiento';
+import { ServiceComponent } from '../components/service';
+import { Banner } from '../components/banner';
 import './home.css';
+
 export default function Home() {
+    const handleClick = () => {
+        const phoneNumber = '573219691650';
+        const message = 'solicitar servicio';
+
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    }
+
     return(
         <div className="home">
             <div className="container">
-                <section>
-                    <article>
-                        <div className="title">
-                            <h2>HOME</h2>
+                <div className='row'>
+                    <Banner />
+                    <div className='title'>
+                        <h1>INICIO</h1>
+                    </div>
+                    <div className='home-item'>
+                        <ServiceComponent estadoBoton={'deshabilitado'}/>
+                        <div className='solicitar-grua'>
+                            <button
+                                onClick={()=> handleClick()}
+                            >
+                                <h4>
+                                    Solicitar una grua
+                                </h4>
+                            </button>
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        </p>
-                    </article>
-                </section>
+                    </div>
+                    <div>
+                        <Reconocimiento />
+                    </div>
+                    <div>
+                        <Aliados />
+                    </div>
+                    <div>
+                        <ExperienciaComponent />
+                    </div>
+                </div>
             </div>
         </div>
     )

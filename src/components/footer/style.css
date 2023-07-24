@@ -1,11 +1,18 @@
 .app-footer {
     background-color: rgb(20, 80, 201);
-    padding: 18px;
-    text-align: center;
+    margin-top: auto;
 }
 
     .item-footer {
-        margin: 8px 8px 48px 8px;
+        margin: 18px 12px;
+        text-align: center;
+    }
+
+    .app-footer .app-footer-container{
+        display: flex;
+        padding: 33px 33px 60px 33px;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .main-area {
@@ -14,3 +21,14 @@
 
     
 
+@media (min-width: 768px){
+    .app-footer .app-footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .item-footer {
+        width: calc(33% - 24px);
+    }
+}

@@ -1,11 +1,29 @@
-.container {
+.about-wrap{
+    background-color: white;
+    color: black;
+}
+
+.about-wrap .aw-container{
+    padding: 8px;
+}
+
+.about-wrap .aw-container .aw-row{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
-.title h2 {
+.about-wrap .aw-container .aw-row .info-us{
+    margin-bottom: 34px;
+}
+
+.about-wrap .aw-container .aw-row .title{
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .about-wrap .aw-container .aw-row .info-us{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}

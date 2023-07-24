@@ -1,5 +1,6 @@
 .app-main {
-    padding: 24px 18px 18px 18px;
     color: black;
+    position: relative;
+    min-height: 100vh;
 }
 

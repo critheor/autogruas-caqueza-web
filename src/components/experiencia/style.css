@@ -1,0 +1,14 @@
+.experiencia {
+    color: black;
+    padding: 33px 24px;
+    background-color: #c7c7c7;
+}
+
+.experiencia .exp-title {
+    text-align: center;
+}
+
+.experiencia .exp-desc p{
+    text-align: center;
+    line-height: 25px;
+}

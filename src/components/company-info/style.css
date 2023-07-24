@@ -1,0 +1,39 @@
+.company-info-wrapper .container {
+    padding: 33px 24px;
+}
+
+.company-info-wrapper .container .cm-row .collage img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.company-info-wrapper .container .cm-row .cm-info .title h2{
+    font-size: 39px;
+    line-height: 49px;
+}
+
+.company-info-wrapper .com-container .cm-row .cm-info .descripcion p{
+    line-height: 19px;
+    font-size: 15px;
+}
+
+@media (min-width: 768px){
+    .company-info-wrapper .container .cm-row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .company-info-wrapper .container .cm-row .collage{
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 40%;
+    }
+
+    .company-info-wrapper .container .cm-row .cm-info{
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 60%;
+    }
+}

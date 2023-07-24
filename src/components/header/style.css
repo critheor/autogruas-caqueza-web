@@ -1,70 +1,39 @@
-.app-header{
+.wrap-header{
     background-color: rgb(20, 80, 201);
-    /*position: fixed;
-    width: 100%;
-    border-bottom: 2px solid white;*/
 }
 
+.wrap-header .container {
+    padding: 0px 18px
+}
 
-    .app-header nav ul{
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        padding: 5px 18px 18px 18px;
-        margin: 0;
-    }
+.wrap-header .container .row {
+    display: flex;
+    align-items: center;
+}
 
-    .app-header nav ul li{
-        padding: 2px;
-    }
+.item-lc {
+    flex-grow: 1;
+}
 
-    .name-company{
-        text-transform: uppercase;
-        margin-left: 5px;
-    }
+.item-nh {
+    flex-grow: 0;
+}
 
-    .name-company p {
-        margin: 1px;
-        padding: 2px;
-        color: #ff0019;
-        font-size: 10px;
-    }
-
-    .header-button-menu{
-        background-color: rgb(20, 80, 201);
-        border-style: none;
-    }
-
-    .drop-menu-none {
-        display: none;
-    }
-
-    .drop-menu-block {
+    .menu-mobile {
         display: block;
     }
 
-    .li-header {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
+    .menu-desktop {
+        display: none;
     }
 
-    .baner-pc {
-        margin: 0;
-        position: relative;
-    }
-    
-    .baner-pc img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+@media screen and (min-width: 800px) {
+    .menu-mobile {
+        display: none;
     }
 
-    .baner-pc-title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-80%, -50%);
+    .menu-desktop {
+        display: block;
     }
+}
 
-    

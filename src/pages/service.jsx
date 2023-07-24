@@ -1,24 +1,24 @@
-import { services } from '../service/services';
-import { CartService } from '../components/cart-service';
+import { ServiceComponent } from '../components/service';
+import { CompanyInfo } from '../components/company-info';
 
 import './service.css';
+import { ExperienciaComponent } from '../components/experiencia';
 
 export default function Service() {
     return(
-        <div className="service">
-            <div className="container">
-                <section>
-                    <h2>NUESTROS SERVICIOS</h2>
-                    <main>
-                        {services.map((item,index) => {
-                            return <CartService 
-                                key={index} imagen={item.image} 
-                                description={item.description}
-                                title={item.title}
-                                />;
-                        })}
-                    </main>
-                </section>
+        <div className="service-wrap">
+            <div className='container'>
+                <div className='row'>
+                    <div>
+                        <ServiceComponent />
+                    </div>
+                    <div>
+                        <CompanyInfo />
+                    </div>
+                    <div>
+                        <ExperienciaComponent />
+                    </div>
+                </div>
             </div>
         </div>
     )

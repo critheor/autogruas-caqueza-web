@@ -1,49 +1,39 @@
-import './style.css';
-import Logo from '../../assets/logo.png';
-//import imagePrincipal from '../../assets/autogruas-caqueza-fondo-1.jpeg';
-import { RiMenuLine } from 'react-icons/ri';
-import { Menu } from '../menu';
 import { useState } from 'react';
+import { LogoNameCompany } from '../logo-name-company';
+import { MenuButton } from '../menu-button';
+import { Menu } from '../menu';
+
+import './style.css';
 
 export function Header(){
-    const [toggled, setToggled] = useState(false);
+    const [openMenu, setOpenMenu] = useState(false);
     return(
-        <header className='app-header'>
-            <nav>
-                <ul>
-                    <li className='li-header'>
-                        <div>
-                            <img src={Logo} alt='logo'/>
-                        </div>
-                        <div className='name-company'>
-                            Autogruas Caqueza<br></br>
-                            <p>
-                                <b>
-                                    servicio 24 horas<br></br>
-                                    Via Bogotá-Villavicencio
-                                </b>
-                            </p>
-                        </div>
-                    </li>
-                        
-                    <li className='header-menu'>
-                        <button 
-                            className='header-button-menu'
-                            onClick={() => setToggled(!toggled)}
-                        >
-                            <RiMenuLine size={24} color='white'/>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-            <div className={toggled ? 'drop-menu-block': 'drop-menu-none'}>
-                <Menu toggled={toggled} setToggled={setToggled}/>
-            </div>    
-            {/*
-                <div className='baner-pc'>
-                    <img className='principal-img' src={imagePrincipal} alt='imagen empresarial'/>
+        <header className='wrap-header'>
+            <div className='container'>
+                <div className='row'>
+                    <div className='item-lc logo-company'>
+                        <LogoNameCompany />
+                    </div>
+                    <nav className='nav-header item-nh'>
+                        <ul>
+                            <li>
+                                <div className='menu-mobile'>
+                                    <MenuButton 
+                                        openMenu={openMenu}
+                                        setOpenMenu={setOpenMenu}
+                                    />
+                                </div>
+                                <div className='menu-desktop'>
+                                    <Menu 
+                                        openMenu={setOpenMenu}
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+                    </nav> 
                 </div>
-            */}
+                {openMenu && <Menu openMenu={setOpenMenu}/>}
+            </div>
         </header>
     )
 }

@@ -1,0 +1,35 @@
+.service-component {
+    padding: 33px;
+}
+
+.title-services {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.title-services h5 {
+    font-size: 13px;
+    color: #f00606;
+    line-height: 19px;
+}
+
+@media (min-width: 768px){
+    .service-component main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cart-service{
+        margin: 34px 16px;
+        width: calc(50% - 32px);
+    }
+}
+
+@media (min-width: 1200px){
+    .cart-service{
+        margin: 8px 16px 34px 16px;
+        width: calc(33% - 32px);
+        max-width: 439px;
+    }
+}

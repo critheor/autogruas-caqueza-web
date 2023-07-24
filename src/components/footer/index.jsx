@@ -1,26 +1,22 @@
 import './style.css';
-import { NavigationBox } from '../navigation-box';
-import { BasicInfoBox } from '../basic-info-box';
 import { ContactInfoBox } from '../contact-info-box';
 import { DiscoverBox } from '../discover-box';
 
 export function Footer(){
     return(
         <footer className='app-footer'>
-            <section>
-                <div className='item-footer'>
-                    <BasicInfoBox />
-                </div>
-                <div className='item-footer'>
-                    <NavigationBox />
-                </div>
+            <div className='app-footer-container'>
                 <div className='item-footer'>
                     <ContactInfoBox />
                 </div>
                 <div className='item-footer'>
+                    <h3>SERVICIO 24 HORAS</h3>
+                    <h4>Via Bogota - Villavicencio</h4>
+                </div>
+                <div className='item-footer'>
                     <DiscoverBox />
                 </div>
-            </section>
+            </div>
         </footer>
     )
 }

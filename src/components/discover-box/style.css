@@ -1,13 +1,17 @@
-.discover-box ul {
+.discover-box {
     margin-top: 5px;
     margin-bottom: 5px;
-    display: block;
 }
 
-.discover-box .social-media ul{
+.discover-box h3{
+    margin-bottom: 1px;
+}
+
+.discover-box .social-media ul {
     display: inline-flex;
 }
 
-.discover-box .social-media ul li {
-    margin: 5px;
+.sm-item {
+    margin-left: 4px;
+    margin-right: 4px;
 }

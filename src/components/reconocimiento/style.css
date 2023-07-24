@@ -1,0 +1,40 @@
+.reconocimiento {
+    background-color: #c7c7c7;
+}
+
+.reconocimiento .container {
+    padding: 38px 18px;
+}
+
+.reconocimiento .container .row{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reconocimiento .container .row .rc-item{
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.rc-item h5{
+    color: rgb(116, 115, 115);
+}
+
+@media (min-width: 768px){
+    .reconocimiento .container .row{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .reconocimiento .container {
+        padding: 60px 24px;
+    }
+
+    .rc-item {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}

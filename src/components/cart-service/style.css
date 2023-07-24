@@ -1,10 +1,15 @@
 .cart-service {
-    background-color: rgb(231, 231, 231);
-    border: 2px solid rgb(20, 80, 201);
-    padding: 20px;
-    margin-bottom: 18px;
+    margin-bottom: 46px;
     color: black;
-    max-width: 280px;
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
 }
 
 .cart-service-container {
@@ -13,8 +18,16 @@
     flex-direction: column;
 }
 
+.cart-service-title {
+    margin-top: 18px;
+    height: 48px;
+}
+
 .cart-service-title h3 {
     margin: 0;
+    font-size: 20px;
+    line-height: 25px;
+    vertical-align: baseline;
 }
 
 .cart-service-image img {
@@ -25,12 +38,35 @@
 
 .cart-service-contact-us {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
-@media screen and (min-width: 680px) {
-    .cart-service {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
+.cart-service-contact-us button {
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(20, 80, 201);
+    padding: 8px 24px;
+    font-size: 10px;
+    color: white;
 }
+
+.boton-deshabilitado {
+    display: none;
+}
+
+.cart-service-description .description {
+    height: 80px;
+    margin-bottom: 8px;
+}
+
+.cart-service-description .description p{
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* @media screen and (min-width: 800px) {
+    .cart-service {
+        max-width: 320px;
+        margin-right: 8px;
+    }
+} */

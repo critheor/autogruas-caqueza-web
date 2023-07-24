@@ -1,13 +1,26 @@
-import { Link } from 'react-router-dom';
-import scroll from '../../utilities/scroll';
 import './style.css';
 
-export function CartService({ imagen, description, title}) {
+export function CartService({ imagen, description, title, estadoBoton}) {
+    const estadosBoton = {
+        activo: 'boton-activo',
+        deshabilitado: 'boton-deshabilitado',
+    }
+
+    const handleClick = () => {
+        const phoneNumber = '573219691650';
+        const message = 'solicitar servicio';
+
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    }
+
+    const estadoActualBoton = estadoBoton || 'activo';
+
     return(
         <article className='cart-service'>
             <div className='cart-service-container'>
-                <div className='cart-service-image'>
-                    <img src={imagen} alt='vehicule'/>
+                <div className='image-wrapper'>
+                    <img src={imagen} alt='imagen servicio'/>
                 </div>
                 <div className='cart-service-title'>
                     <h3>{title}</h3>
@@ -18,14 +31,14 @@ export function CartService({ imagen, description, title}) {
                     </div>
                 </div>
                 <div className='cart-service-contact-us'>
-                    <button onClick={()=> scroll()}>
+                    <button 
+                        onClick={()=> {
+                            handleClick();
+                        }}
+                        className={estadosBoton[estadoActualBoton]}
+                    >
                         <h4>
-                            <Link
-                                to={`/contact?tiposervicio=${title}`}
-                                style={{color: 'black', textDecoration: 'none'}}
-                            >
-                                SOLICITAR SERVICIO
-                            </Link>
+                            SOLICITAR SERVICIO
                         </h4>
                     </button>
                 </div>
