@@ -5,7 +5,7 @@ import {
 
 import './style.css';
 
-export function Facebook(){
+export function Facebook({size, color}){
     return(
         <div className='facebook'>
             <div className='facebook-container'>
@@ -14,7 +14,7 @@ export function Facebook(){
                     style={{textDecoration: 'none', color: 'inherit'}}
 
                 >
-                    <RiFacebookBoxFill size={35}/>
+                    <RiFacebookBoxFill size={size} color={color}/>
                 </Link>
             </div>
         </div>

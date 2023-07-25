@@ -1,0 +1,36 @@
+.medios-contacto{
+    background-color: rgb(231, 231, 231);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.medios-contacto .mc-container{
+    padding: 33px;
+}
+
+.medios-contacto .mc-container .mc-ctn-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.medios-contacto .mc-container .mc-ctn-row .item{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items: center;
+}
+
+
+.f-0{
+    flex-grow: 0;
+}
+
+.f-1{
+    flex-grow: 1;
+}
+
+.item .f-1 h3{
+    text-indent: 30px;
+}

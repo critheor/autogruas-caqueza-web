@@ -9,7 +9,7 @@ export function Layout({children}){
     return(
         <div>
             <Header />
-            <ContactBar size={22}/>
+            <ContactBar size={28} color={'white'}/>
             <Main children={children}/>
             <Footer />
             <WhatsApp width={'65px'} height={'65px'}/>

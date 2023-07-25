@@ -1,5 +1,5 @@
 import { services } from '../../service/services';
-import { CartService } from '../cart-service';
+import { CardService } from '../card-service';
 
 import './style.css';
 
@@ -13,7 +13,7 @@ export function ServiceComponent({estadoBoton}){
             <main>
                 {services.map((item,index) => {
                     return(
-                        <CartService 
+                        <CardService 
                             key={index} imagen={item.image} 
                             description={item.description}
                             title={item.title}

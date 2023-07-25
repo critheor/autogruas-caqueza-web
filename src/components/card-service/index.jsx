@@ -1,6 +1,6 @@
 import './style.css';
 
-export function CartService({ imagen, description, title, estadoBoton}) {
+export function CardService({ imagen, description, title, estadoBoton}) {
     const estadosBoton = {
         activo: 'boton-activo',
         deshabilitado: 'boton-deshabilitado',

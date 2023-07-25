@@ -14,7 +14,7 @@ export function Footer(){
                     <h4>Via Bogota - Villavicencio</h4>
                 </div>
                 <div className='item-footer'>
-                    <DiscoverBox />
+                    <DiscoverBox size={38} color={'white'}/>
                 </div>
             </div>
         </footer>
