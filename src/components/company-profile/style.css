@@ -1,31 +1,52 @@
 .company-profile {
-    padding: 12px 24px;
-    color: inherit;
+    color: white;
 }
 
-    .company-profile-title {
+    .cp-imagen img{
+        object-fit: cover;
+        width: 100%;
+        height: 440px;
+    }
+
+    .cp-detalles {
+        min-height: 264px;
+        padding: 12px 28px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .company-profile-title h3{
+        font-size: 26px;
     }
 
     .company-profile-info p{
         line-height: 19px;
-        font-size: 12px;
+        font-size: 16px;
+        text-align: justify;
     }
 
         @media (min-width: 768px) {
             .company-profile{
-                width: calc(50% - 56px);
-                margin-right: 8px;
+                width: 100%;
             }
             .cart-service {
                 width: 320px;
                 margin-right: 8px;
             }
-        }
-
-        @media (min-width: 1200px) {
-            .company-profile{
-                width: calc(33% - 52px);
-                margin-right: 8px;
+            .company-profile-container{
+                display: flex;
+                flex-wrap: wrap;
             }
-            
+            .cp-detalles {
+                width: calc(50% - 56px);
+            }
+            .cp-imagen img {
+                height: 100%;
+            }
+            .cp-imagen {
+                width: 50%;
+            }
         }
+            
+        

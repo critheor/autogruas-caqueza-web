@@ -2,6 +2,7 @@ import Ike from '../../assets/ike.jpg';
 import Allianz from '../../assets/allianz.jpg';
 import SeguroEstado from '../../assets/seguros-del-estado.jpg';
 import Liberty from '../../assets/liberty.jpg';
+import Postobon from '../../assets/postobon.png';
 
 import './style.css';
 
@@ -23,6 +24,9 @@ export function Aliados(){
                 </div>
                 <div className='al-item'>
                     <img src={Liberty} alt='Liberty logo'/>
+                </div>
+                <div className='al-item'>
+                    <img src={Postobon} alt='Postobon logo' />
                 </div>
             </div>
         </div>

@@ -10,10 +10,18 @@ export function ContactInfoBox(){
             </div>
             <div className='corporate-office-address'>
                 <div className='title-color'>
-                    <h4>Ubicacion:</h4>
+                    <h4>Ubicacion, Sede oficina:</h4>
                 </div>
                 <div>
-                    <h4>Chipaque Cund - Cra 3 N° 3-42</h4>
+                    <h4>Carrera 3# 3.42 Chipaque - Cund</h4>
+                </div>
+            </div>
+            <div className='corporate-office-address'>
+                <div className='title-color'>
+                    <h4>Ubicacion, Base de gruas:</h4>
+                </div>
+                <div>
+                    <h4>Parqueadero los naranjos Caqueza - Cund</h4>
                 </div>
             </div>
             <div className='customer-service'>

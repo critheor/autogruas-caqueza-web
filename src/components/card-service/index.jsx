@@ -1,4 +1,5 @@
 import './style.css';
+import Mensaje from '../../service/mensaje';
 
 export function CardService({ imagen, description, title, estadoBoton}) {
     const estadosBoton = {
@@ -8,7 +9,7 @@ export function CardService({ imagen, description, title, estadoBoton}) {
 
     const handleClick = () => {
         const phoneNumber = '573219691650';
-        const message = 'solicitar servicio';
+        const message = `Solicitar servicio ${title}\n${Mensaje}`;
 
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');

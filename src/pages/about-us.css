@@ -4,7 +4,6 @@
 }
 
 .about-wrap .aw-container{
-    padding: 8px;
 }
 
 .about-wrap .aw-container .aw-row{
@@ -13,7 +12,6 @@
 }
 
 .about-wrap .aw-container .aw-row .info-us{
-    margin-bottom: 34px;
 }
 
 .about-wrap .aw-container .aw-row .title{
@@ -23,7 +21,6 @@
 @media (min-width: 768px) {
     .about-wrap .aw-container .aw-row .info-us{
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
     }
 }

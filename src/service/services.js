@@ -4,6 +4,8 @@ import rescate from '../assets/rescate.jpg';
 import maquinaria from '../assets/maquinaria.jpg';
 import pesado from '../assets/pesado.jpg';
 import parqueadero from '../assets/parqueadero.jpg';
+import carroTaller from '../assets/carro-taller.png';
+import conductorElegido from '../assets/conductor-elegido.jpg'
 
 export const services = [
     {
@@ -37,12 +39,12 @@ export const services = [
         'description': 'Contamos con servicio de parqueadero. Estamos aquí para brindarle un lugar seguro y confiable donde pueda estacionar su vehículo las 24 horas del día.'
     },
     {
-        'image': pesado,
+        'image': conductorElegido,
         'title': 'Conductor elegido',
         'description': 'Nuestros conductores elegidos son cuidadosamente seleccionados para garantizar un servicio de calidad y respeto hacia usted y su vehículo.'
     },
     {
-        'image': pesado,
+        'image': carroTaller,
         'title': 'Carro taller',
         'description': 'Si ha tenido un contratiempo en carretera, ¡nos dirigiremos a usted para resolver cualquier problema que pueda tener su vehículo!'
     },

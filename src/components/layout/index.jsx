@@ -4,6 +4,7 @@ import { Footer } from '../footer';
 import { WhatsApp } from '../whatsapp';
 import { ContactBar } from '../contact-bar';
 import {  Main } from '../main';
+import { Telefono } from '../telefono';
 
 export function Layout({children}){
     return(
@@ -13,6 +14,7 @@ export function Layout({children}){
             <Main children={children}/>
             <Footer />
             <WhatsApp width={'65px'} height={'65px'}/>
+            <Telefono size={45} color={'white'}/>
         </div>
     )
 }
